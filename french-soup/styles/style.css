@@ -1,9 +1,81 @@
-/*Some necessary adjustments*/
-h1, body, html, main {
+* {
+  padding: 0;
   margin: 0;
 }
-/*Import the font and set the default size*/
-html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  color: #404040;
+}
+
+.hero {
+  background-image: url(../images/soup.jpg);
+  height: 440px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+
+.introduction {
+  font-size: 1.05rem;
+  padding: 3rem  3rem 2rem 3rem;
+  /* color: #333333; */
+}
+
+.introduction img {
+  display: block;
+  width: 55%;
+  margin: 1.2rem auto;
+}
+
+.ingredients {
+  margin: 0 3rem 1rem 3rem;
+
+}
+
+.ingredients h3, .directions h3 {
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+  font-weight:400;
+}
+
+.ingredients li {
+  padding-left: 1rem;
+  font-size: .9rem;
+  list-style: none;
+  margin-left: 0;
+}
+
+/* ul.dash {
+  
+  padding-left: 1em;
+} */
+
+.ingredients > li:before {
+  display: inline-block;
+  content: "-";
+  width: 1rem;
+  margin-left: -1em;
+}
+
+.ingredients img {
+  display: block;
+  width: 50%;
+  margin: 1.5rem auto;
+}
+
+.directions {
+  margin: 2rem 3rem 3rem 3rem;
+  padding-bottom: 4rem;
+}
+
+.directions p {
+  padding-left: 1rem;
+  font-size: .9rem;
 }
